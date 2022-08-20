@@ -1,14 +1,17 @@
-function toggleApiButton() {
-  const apis = document.querySelectorAll('[data-js=api]');
-  const button = api.querySelector('[data-js="buttons"]');
+console.clear();
 
-  apis.forEach(api => {
-    const button = api.querySelector('[data-js="buttons"]');
-    const link = api.querySelector('[data-js="link"]');
-    const image = api.querySelector('[data-js="image"]');
-    button.addEventListener('click', () => {
-      link.classList.toggle('hidden');
-      image.classList.toggle('hidden');
+export default  characterCard()
+
+
+    characterCard.forEach(character => {
+      const listItem = document.createElement('li');
+      listItem.textContent = character.name;
+      listItem.append(listItem);
+      const img = document.createElement('img');
+      img.src = character.image;
+      img.classList.add('character');
+      listItem.prepend(img);
+
+
+      
     });
-  });
-}
