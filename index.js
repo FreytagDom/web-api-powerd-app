@@ -23,15 +23,15 @@ fetch(apiUrl)
 
     person.forEach( Skills => {
     const item = document.createElement('li')
-    const charackterSkills = [
+    const characterSkills = [
         `Name : ${Skills.name}`,
         `gender : ${Skills.gender}`,
         `species : ${Skills.species}`,
-       // `img : ${Skills.image}`,
+        `img : ${Skills.image}`,
       ];
-     // ulist.append(item);
-    console.log(charackterSkills)
-    charackterSkills.forEach(character => {
+     ulist.append(item);
+    console.log(characterSkills)
+    characterSkills.forEach(character => {
     
     })
 })};
